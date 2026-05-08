@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #1e293b
+    );
+
+    min-height: 100vh;
+
+    padding: 40px;
+
+    color: white;
+}
+
+.main-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: #111827;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.5);
+
+    border: 1px solid #334155;
+}
+
+.header {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.header h1 {
+
+    font-size: 42px;
+
+    color: #38bdf8;
+
+    margin-bottom: 15px;
+}
+
+.header p {
+
+    color: #cbd5e1;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+.upload-box {
+
+    background: #1e293b;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    border: 2px dashed #38bdf8;
+}
+
+input[type="file"] {
+
+    margin-bottom: 20px;
+
+    color: white;
+
+    font-size: 16px;
+}
+
+button {
+
+    background: linear-gradient(
+        135deg,
+        #06b6d4,
+        #3b82f6
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 35px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: scale(1.05);
+
+    opacity: 0.9;
+}
+
+.results h2 {
+
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    color: #f8fafc;
+}
+
+.card {
+
+    background: #1e293b;
+
+    padding: 22px;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+
+    border-left: 8px solid #38bdf8;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+    background: #273549;
+}
+
+.card h3 {
+
+    color: #38bdf8;
+
+    margin-bottom: 12px;
+
+    font-size: 20px;
+}
+
+.card p {
+
+    font-size: 18px;
+
+    color: #f1f5f9;
+
+    margin-bottom: 12px;
+
+    line-height: 1.7;
+}
+
+/* Strong Badge */
+
+.strong-badge {
+
+    display: inline-block;
+
+    background: #22c55e;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+/* Medium Badge */
+
+.medium-badge {
+
+    display: inline-block;
+
+    background: #f59e0b;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+/* Weak Badge */
+
+.weak-badge {
+
+    display: inline-block;
+
+    background: #64748b;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}

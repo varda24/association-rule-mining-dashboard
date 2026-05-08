@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Market Basket Analysis</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <h1>🛒 Smart Market Basket Analysis</h1>
+
+        <p>
+            Upload your grocery dataset and discover
+            intelligent product pairings using
+            Association Rule Mining and Apriori Algorithm.
+        </p>
+
+    </div>
+
+    <!-- Upload Section -->
+
+    <div class="upload-box">
+
+        <form method="POST"
+              enctype="multipart/form-data">
+
+            <input type="file"
+                   name="file"
+                   required>
+
+            <br>
+
+            <button type="submit">
+                Analyze Dataset
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- Results -->
+
+    {% if recommendations %}
+
+    <div class="results">
+
+        <h2>📊 Product Recommendations</h2>
+
+        {% for item in recommendations %}
+
+        <div class="card">
+
+            <h3>{{ item.category }}</h3>
+
+            <p>{{ item.text }}</p>
+
+            <!-- Dynamic Badge -->
+
+            <span class="
+            {% if 'Strong' in item.strength %}
+                strong-badge
+            {% elif 'Medium' in item.strength %}
+                medium-badge
+            {% else %}
+                weak-badge
+            {% endif %}
+            ">
+                {{ item.strength }}
+            </span>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
