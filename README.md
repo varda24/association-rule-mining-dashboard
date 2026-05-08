@@ -1,5 +1,9 @@
 # Smart Market Basket Analysis and Product Recommendation System
 
+## Live Demo
+
+🔗 https://aappciation-rule-mining-dashboard-6pzcwy6zygpodcbz5fcqjm.streamlit.app/
+
 ## Project Overview
 
 The Smart Market Basket Analysis System is a Machine Learning-based web application that analyzes grocery transaction datasets to discover relationships between products using the Apriori Algorithm and Association Rule Mining.
